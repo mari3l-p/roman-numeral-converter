@@ -1,0 +1,120 @@
+:root {
+    --marcellus: "Marcellus", serif;
+    --tinos: font-family: "Tinos", serif;
+    --bg: linear-gradient( 109.6deg,  rgba(192,54,57,1) 11.2%, rgba(100,20,21,1) 56.8% );
+    --grey: #5E5E5E;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#general-container {
+    height: 100%;
+    justify-content: center;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: white;
+    font-size: clamp(40px, 6vw, 70px);
+    width: clamp(290px, 100vw, 570px);
+    text-align: center;
+    font-family: var(--tinos);
+    font-weight: 700;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.white-box {
+    background-color: white;
+    width: clamp(320px, 80vw, 650px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+}
+
+#container {
+    padding: 0;
+    margin: 0;
+    height: clamp(200px, 50vw, 320px);
+    font-family: var(--marcellus);
+    justify-content: space-evenly;
+}
+
+label {
+    font-size: clamp(32px, 4vw, 40px);
+    color: var(--grey);
+}
+
+input {
+    background-color: E9E9E9;
+    border: none;
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    width: 80%;
+    height: 18%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #111827;
+}
+
+/* button style */
+.button-40 {
+    background-color: #111827e7;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 65%;
+}
+  
+.button-40:hover {
+    background-color: #111827c7;
+    color: #ffffffe7;
+    border: 2px solid #111827e7;
+}
+  
+.button-40:focus {
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+  
+#output {
+    margin-top: 55px;
+    padding: 10px;
+    color: var(--grey);
+    font-family: var(--tinos);
+    font-size: clamp(25px, 5vw, 45px);
+    justify-content: center;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
